@@ -1,4 +1,9 @@
-import logo from './logo.svg';
+import logo from './img/examIOLogo.png';
+import Hero from './SVG/online_test.svg'
+import prof1 from './img/profs/prof1.jpg'
+import prof2 from './img/profs/prof2.jpg'
+import prof3 from './img/profs/prof3.jpg'
+import prof4 from './img/profs/prof4.jpg'
 import './App.css';
 
 function App() {
@@ -16,7 +21,7 @@ function App() {
                       <img
                           className="object-cover object-center rounded w-10 h-10 text-white "
                           alt="hero"
-                          src={process.env.PUBLIC_URL + '/img/examIOLogo.png'}
+                          src={logo}
                       />
 
                   </a>
@@ -44,16 +49,16 @@ function App() {
                           selvage hot chicken authentic tumeric truffaut hexagon try-hard chambray.</p>
                       <div className="flex justify-center">
                           <button
-                              className="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button
+                              className="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Register
                           </button>
                           <button
-                              className="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">Button
+                              className="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">Login
                           </button>
                       </div>
                   </div>
                   <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
                       <img className="object-cover object-center rounded" alt="hero"
-                           src={process.env.PUBLIC_URL + '/SVG/Online_test.svg'}/>
+                           src={Hero}/>
 
                   </div>
               </div>
@@ -135,19 +140,17 @@ function App() {
                           </div>
                       </div>
                   </div>
-                  <button
-                      className="flex mx-auto mt-16 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button
-                  </button>
               </div>
           </section>
+          {/*@ANIS PLEASE FIX FELX*/}
           <section className="text-gray-600 body-font">
               <div className="container px-5 py-24 mx-auto">
                   <div className="flex flex-wrap -m-4">
-                      <div className="lg:w-1/3 lg:mb-0 mb-6 p-4">
+                      <div className="lg:w-1/3 lg:mb-0 mb-6 p-3">
                           <div className="h-full text-center">
                               <img alt="testimonial"
                                    className="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100"
-                                   src="https://dummyimage.com/302x302"/>
+                                   src={prof1}/>
                               <p className="leading-relaxed">Edison bulb retro cloud bread echo park, helvetica
                                   stumptown taiyaki taxidermy 90's cronut +1 kinfolk. Single-origin coffee ennui shaman
                                   taiyaki vape DIY tote bag drinking vinegar cronut adaptogen squid fanny pack
@@ -158,11 +161,11 @@ function App() {
                               <p className="text-gray-500">Senior Product Designer</p>
                           </div>
                       </div>
-                      <div className="lg:w-1/3 lg:mb-0 mb-6 p-4">
+                      <div className="lg:w-1/3 lg:mb-0 mb-6 p-3">
                           <div className="h-full text-center">
                               <img alt="testimonial"
                                    className="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100"
-                                   src="https://dummyimage.com/300x300"/>
+                                   src={prof2}/>
                               <p className="leading-relaxed">Edison bulb retro cloud bread echo park, helvetica
                                   stumptown taiyaki taxidermy 90's cronut +1 kinfolk. Single-origin coffee ennui shaman
                                   taiyaki vape DIY tote bag drinking vinegar cronut adaptogen squid fanny pack
@@ -173,11 +176,26 @@ function App() {
                               <p className="text-gray-500">UI Develeoper</p>
                           </div>
                       </div>
-                      <div className="lg:w-1/3 lg:mb-0 p-4">
+                      <div className="lg:w-1/3 lg:mb-0 p-3">
                           <div className="h-full text-center">
                               <img alt="testimonial"
                                    className="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100"
-                                   src="https://dummyimage.com/305x305"/>
+                                   src={prof3}/>
+                              <p className="leading-relaxed">Edison bulb retro cloud bread echo park, helvetica
+                                  stumptown taiyaki taxidermy 90's cronut +1 kinfolk. Single-origin coffee ennui shaman
+                                  taiyaki vape DIY tote bag drinking vinegar cronut adaptogen squid fanny pack
+                                  vaporware.</p>
+                              <span className="inline-block h-1 w-10 rounded bg-indigo-500 mt-6 mb-4"></span>
+                              <h2 className="text-gray-900 font-medium title-font tracking-wider text-sm">HENRY
+                                  LETHAM</h2>
+                              <p className="text-gray-500">CTO</p>
+                          </div>
+                      </div>
+                      <div className="lg:w-1/3 lg:mb-0 p-3">
+                          <div className="h-full text-center">
+                              <img alt="testimonial"
+                                   className="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100"
+                                   src={prof3}/>
                               <p className="leading-relaxed">Edison bulb retro cloud bread echo park, helvetica
                                   stumptown taiyaki taxidermy 90's cronut +1 kinfolk. Single-origin coffee ennui shaman
                                   taiyaki vape DIY tote bag drinking vinegar cronut adaptogen squid fanny pack

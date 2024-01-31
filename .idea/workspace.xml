@@ -5,13 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1677f79c-89b9-4323-bf63-669ce2e1ce29" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/frontend/public/SVG/examIOLogo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/public/SVG/online_test.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/public/img/Online_test.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/config/dbConfig.js" beforeDir="false" afterPath="$PROJECT_DIR$/backend/config/dbConfig.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/img/profs/prof1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/img/profs/prof2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/img/profs/prof3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/img/profs/prof4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/SVG/examIOLogo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/SVG/examIOLogo.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/SVG/online_test.svg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/SVG/online_test.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/img/Online_test.png" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/img/Online_test.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/img/examIOLogo.png" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/img/examIOLogo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/index.css" afterDir="false" />
     </list>
@@ -29,10 +32,10 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 0
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 0
+}</component>
   <component name="ProjectId" id="2bglESJyI7y1CYhQLNCuVUfbYUm" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -46,8 +49,9 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
     "ignore_missing_gitignore": "true",
-    "last_opened_file_path": "C:/xampp/htdocs/Exam/frontend/public/SVG",
+    "last_opened_file_path": "C:/xampp/htdocs/Exam/frontend/src/img/profs",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -58,11 +62,13 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\Exam\frontend\src\img\profs" />
       <recent name="C:\xampp\htdocs\Exam\frontend\public\SVG" />
       <recent name="C:\xampp\htdocs\Exam\frontend\src\img" />
       <recent name="C:\xampp\htdocs\Exam\frontend\src\SVG" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\Exam\frontend\src" />
       <recent name="C:\xampp\htdocs\Exam\frontend\public" />
     </key>
   </component>
@@ -75,6 +81,7 @@
       <option name="presentableId" value="Default" />
       <updated>1706644494669</updated>
       <workItem from="1706644499767" duration="3390000" />
+      <workItem from="1706721767506" duration="2981000" />
     </task>
     <servers />
   </component>
