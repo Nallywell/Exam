@@ -1,14 +1,33 @@
 import React, { useState } from 'react';
+import axios from "axios";
+import toast from 'react-hot-toast';
+import { useNavigate } from 'react-router-dom';
 
 const Login = () => {
+  const navigate = useNavigate();
+
+  const onFinish = async (formData) => {
+    try {
+      const response = await axios.post('/api/user/login', formData);
+      if (response.data.success) {
+        toast.success(response.data.message);
+        localStorage.setItem("token", response.data.data);
+        navigate("/");
+      } else {
+        toast.error(response.data.message);
+      }
+    } catch (error) {
+      toast.error('Something went wrong');
+    }
+  };
+
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Here you can handle the login logic, such as sending data to a backend server
-    console.log('Email:', email);
-    console.log('Password:', password);
+    const formData = { email, password };
+    await onFinish(formData);
   };
 
   return (

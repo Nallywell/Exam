@@ -1,25 +1,41 @@
 import React, { useState } from 'react';
-
 import backgroundImage from "../img/Background.PNG";
+import { useNavigate } from 'react-router-dom';
+import axios from "axios";
+import toast from 'react-hot-toast';
 
 const Register = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const navigate = useNavigate();
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Here you can handle the registration logic, such as sending data to a backend server
-    console.log('Name:', name);
-    console.log('Email:', email);
-    console.log('Password:', password);
+    try {
+      const formData = { name, email, password };
+      const response = await axios.post('/api/user/register', formData);
+      if (response.data.success) {
+        toast.success(response.data.message);
+        toast('Redirecting to login page');
+        navigate("/login");
+      } else {
+        toast.error(response.data.message); // Display server-side error message
+      }
+    } catch (error) {
+      if (error.response.status === 400) {
+        // User already exists
+        toast.error(error.response.data.message);
+      } else {
+        // Handle generic error
+        toast.error('Something went wrong');
+      }
+    }
   };
+  
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-gray-100" style={{ backgroundImage: `url(${backgroundImage})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
-
- 
-    
       <div className="flex flex-col bg-white shadow-md px-4 sm:px-6 md:px-8 lg:px-10 py-8 rounded-3xl w-50 max-w-md">
         <div className="font-medium self-center text-xl sm:text-3xl text-gray-800">
           Register Now
@@ -27,7 +43,6 @@ const Register = () => {
         <div className="mt-4 self-center text-xl sm:text-sm text-gray-800">
           Enter your details to create an account
         </div>
-
         <div className="mt-10">
           <form onSubmit={handleSubmit}>
             <div className="flex flex-col mb-5">
@@ -75,7 +90,6 @@ const Register = () => {
                 required
               />
             </div>
-
             <div className="flex w-full">
               <button
                 type="submit"
